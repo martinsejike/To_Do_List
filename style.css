@@ -1,0 +1,173 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Times New Roman", Times, serif;
+}
+main {
+  background-color: rgb(133, 133, 236);
+  color: rgb(71, 34, 7);
+}
+.container {
+  width: 100%;
+  height: 98vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo {
+  width: 40vw;
+  height: 50vh;
+  background-color: rgb(241, 243, 244);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5);
+  /* border: 1px solid black; */
+  border-radius: 12px;
+}
+.to-do1 {
+  width: 39vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(133, 133, 236);
+  opacity: 6;
+  color: white;
+  font-weight: bolder;
+  /* margin-left: 8px; */
+  border: 1px transparent none;
+  border-radius: 40px;
+  position: relative;
+  left: 7px;
+  top: 10px;
+}
+.to-do1 h2 {
+  width: 22vw;
+  height: 9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 8px; */
+  /* background-color: blue; */
+  border: 1px transparent none;
+}
+.to-do1 img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid none;
+}
+.cont-2 {
+  width: 40vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid black; */
+  /* box-shadow: cadetblue; */
+  position: relative;
+  left: 12px;
+  top: 10px;
+}
+.cont-2 input {
+  width: 32vw;
+  height: 5vh;
+  color: chocolate;
+  border-radius: 40px;
+  border-color: aqua;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  margin-left: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.cont-2 input::placeholder {
+  position: relative;
+  left: 8px;
+  font-size: 20px;
+  font-style: italic;
+  color: chocolate;
+}
+.cont-2 button {
+  width: 5vw;
+  height: 5vh;
+  border-radius: 12px;
+  outline: none;
+  background-color: rgb(133, 133, 236);
+  /* background-color: aqua; */
+  /* border-color: aqua; */
+  border: none;
+  color: white;
+  font-style: oblique;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  right: 17px;
+  /* padding-right: 30px; */
+}
+/* .task{
+  width: 100%;
+  margin-top: 10px;
+}
+.item{
+  padding: 10px;
+  border-radius: 0 10px 30px black;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item-btn{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.fak{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+ */
+ul li {
+  list-style: none;
+  font-size: 22px;
+  padding: 5px 3px 5px 10px;
+  padding-left: 35px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  color: chocolate;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(./SEARCH\ EMOJI\ 2.jpeg);
+  background-size: cover;
+  background-position: center;
+  top: 3px;
+  left: 2px;
+}
+ul li.checked {
+  color: chocolate;
+  text-decoration: line-through;
+}
+ul li span {
+  position: absolute;
+  right: 0;
+  /* left: 300px; */
+  top: 7px;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  color: black;
+  /* line-height: 5px; */
+  text-align: center;
+  /* border: 1px solid black; */
+  /* outline: none; */
+  border-radius: 50%;
+}
+ul li span:hover {
+  background: aqua;
+}
